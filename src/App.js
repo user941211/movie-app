@@ -37,7 +37,8 @@ function App() {
           <h1>평점 변경시에는 위쪽에 fetch 주소창에 minimum_rating=8.5를 바꾸면 됨</h1>
           {movies.map((movie) => (
             <div className="naemo" key={movie.id}>
-              {++cnt}번 {movie.title} {movie.rating}점
+              <h2>{++cnt}번 {movie.title} {movie.rating}점</h2>
+              <p>{movie.summary}</p>
             </div>
           ))}
         </div>
