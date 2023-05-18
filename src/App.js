@@ -38,6 +38,12 @@ function App() {
           {movies.map((movie) => (
             <div className="naemo" key={movie.id}>
               <h2>{++cnt}번 {movie.title} {movie.rating}점</h2>
+              <img key = {movie.medium_cover_image} src={movie.medium_cover_image}></img>
+              <ul>
+                {movie.genres.map(g => (
+                  <li key={g}>{g}</li>
+                ))}
+              </ul>
               <p>{movie.summary}</p>
             </div>
           ))}
