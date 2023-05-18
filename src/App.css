@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.naemo{
+  padding : 5px;
+  border : 1px dashed black;
+  margin : 5px;
+}
