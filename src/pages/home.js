@@ -3,7 +3,7 @@ import Movie from '../components/movie';
 
 function Home(){
     const [loading, setLoading] = useState(true);
-    const [movies, setMoveis] = useState([]);
+    const [movies, setMovies] = useState([]);
     const getMovies = async () => {
     /*const response = await fetch(
       `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year`
@@ -16,7 +16,7 @@ function Home(){
       )
     ).json();
 
-    setMoveis(json.data.movies);
+    setMovies(json.data.movies);
     setLoading(false);
     }
     useEffect(() => {
@@ -33,7 +33,7 @@ function Home(){
       <h1>로딩중...</h1>
       ) : (
         <div>
-          <h1>아래 항목은 영화 평점 8.5이상만 나오게 했음.</h1>
+          <h1>이 사이트는 20개만 보여주는 api임.</h1>
           <h1>평점 변경시에는 위쪽에 fetch 주소창에 minimum_rating=8.5를 바꾸면 됨</h1>
           {movies.map((movie) => <Movie 
            key={movie.id}
