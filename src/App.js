@@ -17,3 +17,5 @@ function App() {
 //컴퍼넌트 밖과 안은 설정이 같아야 한다.
 //router는 재실행을 막기 위해 a tag와 href를 자제한다.
 export default App;
+//package.json에
+//deploy랑 predeploy 와 homepage는 추가할것
