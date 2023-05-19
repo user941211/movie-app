@@ -5,9 +5,9 @@ import Detail from "./pages/detail";
 
 function App() {
   return (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-          <Route path= {`${process.env.PUBLIC_URL}/`} element={ <Home /> } />
+          <Route path= "/" element={ <Home /> } />
           <Route path= {`${process.env.PUBLIC_URL}/movie/:movieId`} element={ <Detail /> } />
           <Route path= {`${process.env.PUBLIC_URL}/register`} element={ <h1>hello</h1> } />
       </Routes>
