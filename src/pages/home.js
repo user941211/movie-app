@@ -3,8 +3,8 @@ import Movie from '../components/movie';
 
 function Home(){
     const [loading, setLoading] = useState(true);
-  const [movies, setMoveis] = useState([]);
-  const getMovies = async () => {
+    const [movies, setMoveis] = useState([]);
+    const getMovies = async () => {
     /*const response = await fetch(
       `https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year`
     )
@@ -18,11 +18,11 @@ function Home(){
 
     setMoveis(json.data.movies);
     setLoading(false);
-  }
-  useEffect(() => {
-    getMovies();
-  }, []);
-  var cnt=0;
+    }
+    useEffect(() => {
+        getMovies();
+    }, []);
+    var cnt=0;
   
   //console.log(movies);
   //json.data.movies가 영화내용 배열
@@ -39,6 +39,7 @@ function Home(){
            key={movie.id}
            //key는 react.js에서만, map안에서 component들을 render할 때 사용한다.
            cnt={cnt}
+           id={movie.id}
            coverimg={movie.medium_cover_image} 
            rating={movie.rating}
            title={movie.title}
