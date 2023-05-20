@@ -18,8 +18,8 @@ function Detail(){
     }, [getMovie]);
     return (
         <div>
-            <h2>콘솔창에 세부정보 있음. 실험용 프로젝트라 귀찮아서 굳이 옮겨놓지는 않음.</h2>;
-            <Link to ="/"><h1>Detail</h1></Link>;
+            <h2>콘솔창에 세부정보 있음. 실험용 프로젝트라 귀찮아서 굳이 옮겨놓지는 않음.</h2>
+            <Link to ="/"><h1>Detail</h1></Link>
         </div>
     );
 }
